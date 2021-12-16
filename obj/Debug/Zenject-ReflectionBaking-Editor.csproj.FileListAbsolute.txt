@@ -1,0 +1,2 @@
+D:\GameDev\tests\Alley_Bird_test\obj\Debug\Zenject-ReflectionBaking-Editor.csproj.AssemblyReference.cache
+D:\GameDev\tests\Alley_Bird_test\obj\Debug\Zenject-ReflectionBaking-Editor.csproj.CoreCompileInputs.cache
