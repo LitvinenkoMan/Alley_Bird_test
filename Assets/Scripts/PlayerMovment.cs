@@ -5,8 +5,6 @@ using UnityEngine;
 public class PlayerMovment : MonoBehaviour
 {
     [SerializeField]
-    TrailRenderer Trail;
-    [SerializeField]
     Vector2 Position;
     [SerializeField]
     float JumpForce = 100;
@@ -15,7 +13,6 @@ public class PlayerMovment : MonoBehaviour
 
     [SerializeField]
     bool CanMove;
-    bool CanJump;
 
     Rigidbody2D rigidbody2D;
     Vector3 StartPosition;
@@ -59,22 +56,18 @@ public class PlayerMovment : MonoBehaviour
     {
         if (CanMove)
         {
-            if (/*(Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began) || */Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
                 Jump();
         }
+        Position = gameObject.transform.position;
     }
 
     private void FixedUpdate()
     {
         if (CanMove)
         {
-            if (CanJump)
-            {
-                
-            }
             Move();
         }
-        Position = gameObject.transform.position;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -112,19 +105,20 @@ public class PlayerMovment : MonoBehaviour
         return CanMove;
     }
 
-    public void StopMove()
-    {
-        CanMove = false;
-    }
-    public void StartMove()
-    {
-        CanMove = true;
-    }
-
     public void ReturnToStartPosition()
     {
         transform.position = StartPosition;
         rigidbody2D.Sleep();
         rigidbody2D.WakeUp();
+    }
+
+    public void StopMove()
+    {
+        CanMove = false;
+    }
+
+    public void StartMove()
+    {
+        CanMove = true;
     }
 }

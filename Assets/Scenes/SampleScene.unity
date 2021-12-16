@@ -405,9 +405,9 @@ MonoBehaviour:
   - {fileID: 182571264}
   - {fileID: 861898015}
   - {fileID: 490013159}
+  Example: {fileID: 0}
   MaxLenght: 7
-  example: {fileID: 3618803771515997866, guid: 37f328081a5be1047bc74b9b445d7388, type: 3}
-  InitializeOnStart: 1
+  InitializeOnStart: 0
 --- !u!114 &150743801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2845,9 +2845,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c2f8ab828d8dfa4684019e30b3b2602, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trail: {fileID: 1655645222}
   Position: {x: 0, y: 0}
-  JumpForce: 15000
+  JumpForce: 13500
   OneStep: 0.0625
   CanMove: 0
 --- !u!61 &1162537017
@@ -3064,9 +3063,9 @@ MonoBehaviour:
   - {fileID: 599167954}
   - {fileID: 73626822}
   - {fileID: 1980371085}
+  Example: {fileID: 0}
   MaxLenght: 5
-  example: {fileID: 0}
-  InitializeOnStart: 1
+  InitializeOnStart: 0
 --- !u!4 &1278192337
 Transform:
   m_ObjectHideFlags: 0

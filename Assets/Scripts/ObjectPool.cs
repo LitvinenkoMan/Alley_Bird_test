@@ -7,9 +7,9 @@ public class ObjectPool : MonoBehaviour, IObjectPooler
     [SerializeField]
     List<GameObject> gameObjects = new List<GameObject>();
     [SerializeField]
-    int MaxLenght = 0;
+    GameObject Example;
     [SerializeField]
-    GameObject example;
+    int MaxLenght = 0;
     [SerializeField]
     bool InitializeOnStart = true;
 
@@ -22,11 +22,6 @@ public class ObjectPool : MonoBehaviour, IObjectPooler
         }
     }
 
-    void Update()
-    {
-
-    }
-
     public GameObject GetOrCreateObject()
     {
         foreach (var item in gameObjects)
@@ -37,9 +32,9 @@ public class ObjectPool : MonoBehaviour, IObjectPooler
             }
             else
             {
-                if (example != null && gameObjects.Count < MaxLenght)
+                if (Example != null && gameObjects.Count < MaxLenght)
                 {
-                    GameObject gameObject = Instantiate(example);
+                    GameObject gameObject = Instantiate(Example);
                     gameObject.SetActive(false);
                     return gameObject;
                 }
@@ -51,6 +46,11 @@ public class ObjectPool : MonoBehaviour, IObjectPooler
     public void InitializePool(int maxCount)
     {
         MaxLenght = maxCount;
+        for (int i = 0; i < MaxLenght; i++)
+        {
+            gameObjects.Add(GetOrCreateObject());
+        }
+
     }
 
     public List<GameObject> GetPool()

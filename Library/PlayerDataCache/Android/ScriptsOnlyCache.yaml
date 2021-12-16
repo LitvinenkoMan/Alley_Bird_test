@@ -35,6 +35,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -809,13 +811,13 @@ ScriptsOnlyBuild:
     className: GameOver
   - hash:
       serializedVersion: 2
-      Hash: 11604f6bc4888158f6f935418e7520fa
+      Hash: 83c78f6180daabd6157994b933cd4b59
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ObjectPool
   - hash:
       serializedVersion: 2
-      Hash: 9420c315a5706ed08b0b09a044c3c38b
+      Hash: 3e38d52f00d4ea917347f53c800e0279
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovment
@@ -834,4 +836,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/GameDev/tests/Alley_Bird_test/Builds/Build1.apk
+  playerPath: D:/GameDev/tests/Alley_Bird_test/Builds/Build(Final).apk

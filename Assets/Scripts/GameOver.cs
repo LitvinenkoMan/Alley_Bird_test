@@ -21,16 +21,6 @@ public class GameOver : MonoBehaviour
         Enemy.OnPlayerMeetEnemy -= ShowGameOverInterface;
     }
 
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
-
     public void ShowGameOverInterface()
     {
         GameOverInterface.SetActive(true);

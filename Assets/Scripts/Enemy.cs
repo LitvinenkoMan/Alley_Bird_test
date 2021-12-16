@@ -27,11 +27,6 @@ public class Enemy : MonoBehaviour
     public delegate void PlayerMeetEnemy();
     public static event PlayerMeetEnemy OnPlayerMeetEnemy;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
 

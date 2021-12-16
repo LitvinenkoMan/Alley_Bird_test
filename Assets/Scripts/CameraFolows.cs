@@ -26,7 +26,7 @@ public class CameraFolows : MonoBehaviour
         }
     }
 
-    private void SetPosition(Vector2 newPosition)
+    private void SetPosition(Vector2 newPosition) 
     {
         camera.transform.position = newPosition;
     }
