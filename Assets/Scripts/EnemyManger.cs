@@ -48,7 +48,7 @@ public class EnemyManger : MonoBehaviour
 
     public void TryToPlaceEnemyWithChanse()
     {
-        if (Random.Range(0, 100) >= Chance)
+        if (Random.Range(0, 100) <= Chance)
         {
             PlaceEnemyOnPlatform();
         }
